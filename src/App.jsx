@@ -1,5 +1,9 @@
+import Intro from "./components/intro";
+
 const App = () => {
-  return <div>Shawn Cochran-Developer</div>
+  return <div>
+    <Intro />
+  </div>
 }
 
 export default App;
