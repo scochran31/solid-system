@@ -1,9 +1,9 @@
 const Intro = () => {
     return (
         <div>
-            this is the intro
+            <h1>this is the intro</h1>
         </div>
     )
-}
+};
 
-export default Intro
+export default Intro;
