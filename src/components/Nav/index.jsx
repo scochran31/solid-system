@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Link } from '@mui/material';
+import { Box, Grid, Link, Typography } from '@mui/material';
 
 const Nav = () => {
     return (
@@ -15,23 +15,27 @@ const Nav = () => {
                 alignItems: 'center',
             }}
         >
-            <Box>About</Box>
-            <Box>My Work</Box>
-            <Box
-                sx={{
-                    fontSize: 70,
-                }}
-            >
+            <Box>
+                <Typography variant='h5'>About</Typography>
+            </Box>
+            <Box>
+                <Typography variant='h5'>My Work</Typography>
+            </Box>
+            <Box>
                 <Link
                     href='/'
                     underline='none'
                     color='black'
                 >
-                    Shawn Cochran
+                    <Typography variant='h2'>Shawn Cochran</Typography>
                 </Link>
             </Box>
-            <Box>Resume</Box>
-            <Box>Contact Me</Box>
+            <Box>
+                <Typography variant='h5'>Resume</Typography>
+            </Box>
+            <Box>
+                <Typography variant='h5'>Contact Me</Typography>
+            </Box>
         </Grid>
     )
 }
